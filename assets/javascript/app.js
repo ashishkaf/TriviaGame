@@ -1,52 +1,53 @@
 $(document).ready(function () {
   var options = [
     {
-      question: "Pupusas, handmade thick stuffed corn tortillas, are a traditional dish from what country?", 
-      choice: ["Ethiopia", "El Salvadore", "Peru", "Guatamala"],
-      answer: 1,
-      photo: "assets/images/pupusas.jpg"
+      question: "Which country has traingular shaped flag?", 
+      choice: ["Australia", "Myanmar", "Taiwan", "Nepal"],
+      answer: 3,
+      Background: URL 
+      
      },
      {
-       question: "What popular soda beverage was originally developed as a mixer for whiskey?", 
-      choice: ["Mountain Dew", "Sprite", "7-UP", "Coke"],
-      answer: 0,
-      photo: "assets/images/mtdew.gif"
+       question: "What is an American national game?", 
+      choice: ["Basketball", "Football", "Baseball", "Hockey"],
+      answer: 2,
+      
      }, 
      {
-       question: "Kopi luwak is a very expensive type of what?", 
-      choice: ["Spice", "Caviar", "Coffee", "Rice variety" ],
-      answer: 2,
-      photo: "assets/images/coffee.gif"
-    }, 
-    {
-      question: "Which is not an ingredient in a Harvey Wallbanger cocktail?", 
-      choice: ["Orange Juice", "Vodka", "Sour Mix", "Galliano" ],
-      answer: 2,
-      photo: "assets/images/harvey.jpg"
-    }, 
-    {
-      question: "How many items are there in a Bakers' Dozen?", 
-      choice: ["12", "6", "24", "13" ],
-      answer: 3,
-      photo: "assets/images/dozen.jpg"
-    }, 
-    {
-      question: "What is the most widely eaten fish in the world?", 
-      choice: ["Tilapia", "Herring", "Sardine", "Tuna" ],
-      answer: 1,
-      photo: "assets/images/herring.jpg"
-    }, 
-    {
-      question: "Which fruit does not ripen once it has been picked?", 
-      choice: ["Banana", "Lemon", "Mango", "Apple" ],
-      answer: 1,
-      photo: "assets/images/lemon.gif"
-    }, 
-    {
-      question: "Which fruit contains the most protein per 100 calories?", 
-      choice: ["Guava", "Avocado", "Banana", "Blackberries" ],
+       question: "What is the capital of California?", 
+      choice: ["Sacramento", "San Francisco", "Vallejo", "Davis" ],
       answer: 0,
-      photo: "assets/images/guava.gif"
+      
+    }, 
+    {
+      question: "How many days are there in leap year?", 
+      choice: ["364", "365", "366", "367" ],
+      answer: 2,
+      
+    }, 
+    {
+      question: "How many terms president can sit in office?", 
+      choice: ["1", "2", "3", "4" ],
+      answer: 1,
+      
+    }, 
+    {
+      question: "Name the world’s biggest island", 
+      choice: ["Finland", "Greenland", "Switzerland", "Poland" ],
+      answer: 1,
+      
+    }, 
+    {
+      question: "Where did the Olympic Games originate?", 
+      choice: ["USA", "Greece", "UK", "Japan" ],
+      answer: 1,
+      
+    }, 
+    {
+      question: "What is the seventh planet from the sun?", 
+      choice: ["Uranus", "Jupitar", "Earth", "Mars" ],
+      answer: 0,
+      
     }];
   
   var correctCount = 0;
