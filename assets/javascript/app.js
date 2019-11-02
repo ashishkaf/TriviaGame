@@ -4,49 +4,56 @@ $(document).ready(function () {
       question: "Which country has traingular shaped flag?", 
       choice: ["Australia", "Myanmar", "Taiwan", "Nepal"],
       answer: 3,
-      Background: URL 
+      photo: "assets/images/nepal.jpg"
+      
       
      },
      {
-       question: "What is an American national game?", 
-      choice: ["Basketball", "Football", "Baseball", "Hockey"],
+       question: "Who is the current Quarterback for Chicago Bears?", 
+      choice: ["EliManning", "DrewBrees", "MitchelTrubitsky", "TomBrady"],
       answer: 2,
+      photo: "assets/images/football.jpg"
       
      }, 
      {
        question: "What is the capital of California?", 
       choice: ["Sacramento", "San Francisco", "Vallejo", "Davis" ],
       answer: 0,
-      
+      photo: "assets/images/sac.jpg"
     }, 
     {
       question: "How many days are there in leap year?", 
       choice: ["364", "365", "366", "367" ],
       answer: 2,
+      photo: "assets/images/leap.jpg"
       
     }, 
     {
       question: "How many terms president can sit in office?", 
       choice: ["1", "2", "3", "4" ],
       answer: 1,
+      photo: "assets/images/president.jpg"
       
     }, 
     {
       question: "Name the world’s biggest island", 
       choice: ["Finland", "Greenland", "Switzerland", "Poland" ],
       answer: 1,
+      photo: "assets/images/greenland.jpg"
       
     }, 
     {
       question: "Where did the Olympic Games originate?", 
       choice: ["USA", "Greece", "UK", "Japan" ],
       answer: 1,
+      photo: "assets/images/olympics.jpg"
       
     }, 
     {
       question: "What is the seventh planet from the sun?", 
       choice: ["Uranus", "Jupitar", "Earth", "Mars" ],
       answer: 0,
+      photo: "assets/images/uranus.jpg"
       
     }];
   
@@ -62,13 +69,25 @@ $(document).ready(function () {
   var index;
   var newArray = [];
   var holder = [];
+
+  function aud() {
+
+    //-----------------------
+    if (displayQuestion === words[0]) {
+      swam.pause();
+      sheep.play();
+
+    
+      
+    }
+  }
   
   
   
-  $("#reset").hide();
+  $("#reset").show();
   //click start button to start game
   $("#start").on("click", function () {
-      $("#start").hide();
+      $("#start").show();
       displayQuestion();
       runTimer();
       for(var i = 0; i < options.length; i++) {
@@ -92,7 +111,7 @@ $(document).ready(function () {
       unanswerCount++;
       stop();
       $("#answerblock").html("<p>Time is up! The correct answer is: " + pick.choice[pick.answer] + "</p>");
-      hidepicture();
+      showpicture();
     }	
   }
   
@@ -138,25 +157,25 @@ $(document).ready(function () {
       correctCount++;
       userGuess="";
       $("#answerblock").html("<p>Correct!</p>");
-      hidepicture();
+      showpicture();
   
     } else {
       stop();
       wrongCount++;
       userGuess="";
       $("#answerblock").html("<p>Wrong! The correct answer is: " + pick.choice[pick.answer] + "</p>");
-      hidepicture();
+      showpicture();
     }
   })
   }
   
   
-  function hidepicture () {
+  function showpicture () {
     $("#answerblock").append("<img src=" + pick.photo + ">");
     newArray.push(pick);
     options.splice(index,1);
   
-    var hidpic = setTimeout(function() {
+    var showpicture = setTimeout(function() {
       $("#answerblock").empty();
       timer= 20;
   

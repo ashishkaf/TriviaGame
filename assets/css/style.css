@@ -30,7 +30,7 @@ img {
 }
 
 body {
-  background-image: url("");
+  background-image: url("https://stamfordmag.com/wp-content/uploads/2019/04/trivianight2-1000x563.jpg");
   background-size: cover;
   font-family: 'Karla', sans-serif;
 }
@@ -68,3 +68,5 @@ h2, h4 {
   position: relative;
   bottom: -150px;
 }
+
+
